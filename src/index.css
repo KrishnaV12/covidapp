@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.container-fluid{
+    width: 90%;
+    margin: auto;
+}
+
+.table-responsive{
+    max-height: 700px;
+    box-shadow: rgba(0,0,0,0,25) 0px 25px 50px -12px;
+}
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+    .box{    
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+  
+
+}
+
+tr:hover{
+    background-color: rgb(240, 231, 231);
+}
+
+
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none;
+}
+
+td:hover::after,
+th:hover::after{
+    content:"";
+    position: absolute;
+    background-color: #d11a1a;
+    left:0;
+    top: -5000px;
+    height: 5000px;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.table tr td:hover:nth-child(4){
+    background-color:#c24446;
+    color: wheat;
+    border: 0.5px solid rgb(12, 12, 12)
+}
+
+.table tr td:hover{
+    background-color:#4dc26a;
+    color: whitesmoke;
+    border: 0.5px solid rgb(12, 12, 12)
+}
+
+.thead-dark{
+    font-weight: bold;
+    text-transform: uppercase;
+}
